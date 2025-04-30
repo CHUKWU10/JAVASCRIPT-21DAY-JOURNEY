@@ -7,7 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    REVISION OF WHAT I HAVE LEARNT SO FAR
+
+    DATA TYPES AND VARIABLES
+    PRIMITIVE DATA TYPES IN JAVASCRIPT
+1. STRING: They are used to represent text data. Strings are enclosed in single or double quotes.
+   Example: "Hello World", 'JavaScript'
+    String methods: length, charAt(), indexOf(), slice(), substring(), toUpperCase(), toLowerCase(), etc.
+2. NUMBER: They are used to represent numeric data. Numbers can be integers or floating-point numbers.
+   Example: 42, 3.14, -7
+    Number methods: toFixed(), toExponential(), parseInt(), parseFloat(), etc.
+3. BOOLEAN: They are used to represent logical values. A boolean can be either true or false.
+   Example: true, false
+    Boolean methods: valueOf(), toString()
+4. UNDEFINED: It is a special data type that indicates a variable has been declared but not assigned a value.
+   Example: let x; // x is undefined
+    Undefined methods: valueOf(), toString()
+5. NULL: It is a special data type that represents the intentional absence of any object value.
+   Example: let y = null; // y is null
+    Null methods: valueOf(), toString()
+6. SYMBOL: It is a unique and immutable data type introduced in ES6. Symbols are often used as object property keys.
+   Example: const sym = Symbol('description'); // sym is a symbol
+    Symbol methods: toString(), valueOf()
+7. BIGINT: It is a numeric data type that can represent integers with arbitrary precision. BigInt is used for very large integers.
+   Example: const bigInt = 1234567890123456789012345678901234567890n; // bigInt is a BigInt
+    BigInt methods: toString(), valueOf()
+
+NON-PRIMITIVE DATA TYPES IN JAVASCRIPT
+1. OBJECT: It is a collection of key-value pairs. Objects can store multiple values as properties and methods.
+   Example: const person = { name: 'John', age: 30, isStudent: false };
+    Object methods: keys(), values(), entries(), assign(), freeze(), seal(), etc.
+2. ARRAY: It is a special type of object that represents an ordered collection of values. Arrays can store multiple values in a single variable.
+   Example: const fruits = ['apple', 'banana', 'orange'];   // fruits is an array
+    Array methods: push(), pop(), shift(), unshift(), slice(), splice(), forEach(), map(), filter(), reduce(), etc.
+3. FUNCTION: It is a special type of object that can be called to perform a specific task. Functions can take parameters and return values.
+   Example: function add(a, b) { return a + b; } // add is a function.
+    Function methods: call(), apply(), bind(), toString(), etc.
+4. DATE: It is a built-in object that represents dates and times. The Date object provides methods for manipulating dates and times.
+   Example: const now = new Date(); // now is a Date object 
+    Date methods: getDate(), getMonth(), getFullYear(), getHours(), getMinutes(), getSeconds(), toISOString(), etc.
+5. REGEXP: It is a built-in object that represents regular expressions. Regular expressions are used for pattern matching in strings.
+    Example: const regex = /[a-zA-Z]/; // regex is a RegExp object
+    RegExp methods: test(), exec(), toString(), etc.
+6. MATH: It is a built-in object that provides mathematical constants and functions. The Math object is not a constructor and cannot be instantiated.
+    Example: Math.PI, Math.sqrt(16), Math.random()
+    Math methods: abs(), ceil(), floor(), round(), max(), min(), pow(), random(), etc.
+7. JSON: It is a built-in object that provides methods for working with JSON (JavaScript Object Notation) data. JSON is a lightweight data interchange format.
+    Example: JSON.stringify(obj), JSON.parse(jsonString)
+    JSON methods: stringify(), parse(), stringify(), parse()
 
 
 

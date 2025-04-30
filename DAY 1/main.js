@@ -31,7 +31,7 @@
 }
 
 const user = profile ();
-console.log(user)*/
+console.log(user)
 
 
 function userProfile(){
@@ -60,3 +60,5 @@ function userProfile(){
 
 const profile = userProfile();
 console.log(profile)
+
+*/

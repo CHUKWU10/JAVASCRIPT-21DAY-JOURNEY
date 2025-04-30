@@ -1,0 +1,127 @@
+:root{
+    --background-color: #ffeb59;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --primary-color: #e63946;
+    --secondary-color: #f3f7fb;
+    --text-color: #1e1e1e;
+    --font: "segoe-ui", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --progress-bar-bg: #f0f0f0;
+    --progress-fill: #e63946;
+    --border-color: #cccccc;
+    --highlight-text:#e63946;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.quiz-card{
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 500px;
+    /* height: 45dvh; */
+    padding: 25px 30px;
+    border-radius: 13px;
+    box-shadow: 0px 8px 16px var(--card-shadow);
+}
+
+.quiz-header h1{
+    font-weight:bold;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.quiz-header span{
+    color: #999999;
+    text-transform: capitalize;
+    font-size: 1rem;
+    float: right;
+}
+
+/* .progress-bar{
+    background: var(--progress-bar-bg);
+    height: 8px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-bar-fill{
+    background: var(--progress-fill);
+    height: 100%;
+    width: 25%;
+    transition: 0.3s ease-in-out;
+} */
+
+.question{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 18px;
+}
+
+.options{
+    list-style-type: none;
+
+}
+
+.option{
+    /* display: none; */
+    margin-bottom: 12px;
+}
+
+.option input[type="radio"]{
+    display: none;
+}
+
+.option label{
+    content: "";
+}
+
+.option input[type="radio"]:checked + label {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    /* color:var(--highlight-text) ; */
+    border: 1px var(--border-color);
+    border-radius: 20px;
+}
+
+.option label {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s border 0.2s;
+}
+
+.option input[type="radio"]:checked + label::before {
+    content: "✔";
+    color: white;
+    background: var(--primary-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+

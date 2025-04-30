@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="quiz-card">
+        <div class="quiz-header">
+            <h1>Quiz <span>salta</span></h1>
+        </div>
+
+        <progress id="bar" value="12" max="100%">12%</progress>
+        <!-- <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div> -->
+
+        <div class="question"><p>Quante Volte Utilizzi Un Pezzo Di Carta Come Promemoria?</p></div>
+
+        <ul class="options">
+            <li class="option">
+                <input type="radio" name="option" id="option1">
+                <label for="option1">Quasi mai</label>
+            </li>
+
+            <li class="option">
+                <input type="radio" name="option" id="option2" checked>
+                <label for="option2">Abbastanza <span>(2 of 3 volte al giorno)</span></label>
+            </li>
+
+            <li class="option">
+                <input type="radio" name="option" id="option3">
+                <label for="option3">Tantissimo</label>
+            </li>
+
+            <li class="option">
+                <input type="radio" name="option" id="option4">
+                <label for="option4">E li mio pane quotidiano</label>
+            </li>
+
+        </ul>
+
+        <p class="quiz-footer">
+            Una volta il test verra mostrato un grafico con i pro e i contro della tua gestione quotidiana, 
+            con consigli e guide pratiche che potrai applicare da subito.
+        </p>
+
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
