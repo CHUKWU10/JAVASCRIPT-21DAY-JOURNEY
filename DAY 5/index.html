@@ -8,47 +8,43 @@
 </head>
 <body>
     
-    <div class="quiz-card">
-        <div class="quiz-header">
-            <h1>Quiz <span>salta</span></h1>
+    <body>
+        <div class="container">
+          <div class="quiz-box">
+            <div class="quiz-header">
+              <span class="quiz-title">QUIZ</span>
+              <a href="#" class="skip">Salta ›</a>
+            </div>
+
+            <div class="progress-bar"></div>
+
+            <h2 class="question">Quante volte utilizzi un pezzo di carta come promemoria?</h2>
+
+            <form class="options">
+              <label class="option">
+                <input type="radio" name="reminder" value="quasi_mai">
+                <span>Quasi mai</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="reminder" value="abbastanza">
+                <span>Abbastanza <small>(2 o 3 volte al giorno)</small></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="reminder" value="tantissimo">
+                <span>Tantissimo</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="reminder" value="pane_quotidiano">
+                <span>È il mio pane quotidiano</span>
+              </label>
+            </form>
+
+          </div>
+
+              <p class="info-text">
+                  Una volta completato il test verrà mostrato un grafico con i pro e i contro della tua gestione quotidiana, con consigli e guide pratiche che potrai applicare da subito.
+              </p>
         </div>
-
-        <progress id="bar" value="12" max="100%">12%</progress>
-        <!-- <div class="progress-bar">
-            <div class="progress-bar-fill"></div>
-        </div> -->
-
-        <div class="question"><p>Quante Volte Utilizzi Un Pezzo Di Carta Come Promemoria?</p></div>
-
-        <ul class="options">
-            <li class="option">
-                <input type="radio" name="option" id="option1">
-                <label for="option1">Quasi mai</label>
-            </li>
-
-            <li class="option">
-                <input type="radio" name="option" id="option2" checked>
-                <label for="option2">Abbastanza <span>(2 of 3 volte al giorno)</span></label>
-            </li>
-
-            <li class="option">
-                <input type="radio" name="option" id="option3">
-                <label for="option3">Tantissimo</label>
-            </li>
-
-            <li class="option">
-                <input type="radio" name="option" id="option4">
-                <label for="option4">E li mio pane quotidiano</label>
-            </li>
-
-        </ul>
-
-        <p class="quiz-footer">
-            Una volta il test verra mostrato un grafico con i pro e i contro della tua gestione quotidiana, 
-            con consigli e guide pratiche che potrai applicare da subito.
-        </p>
-
-    </div>
 
 
     <script src="./main.js"></script>

@@ -38,6 +38,14 @@
 // let profile = age < 18 && isActive? 'you are a minor': age >= 18 && isActive? 'Active adult profile': 'inactive adult proile';
 // console.log(profile)
 
-const boss = "me";
-const boss = "you";
-console.log(boss)
+// FINDING THE LAST LETTER OF A NAME
+// let name = "immanuel";
+// // firstName = name[5]
+// let lastLetter = name[name.length - 2]
+//  console.log(lastLetter)
+
+let obj = { name: "Immanuel", age: 25 };
+console.log(obj);                        
+console.log("User: " + obj);              
+console.log("User: " + JSON.stringify(obj));
+
